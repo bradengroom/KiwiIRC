@@ -65,7 +65,10 @@ _kiwi.view.Channel = _kiwi.view.Panel.extend({
             is_highlight = true;
             msg_css_classes += ' highlight';
         }
+        
+        _kiwi.app.view.playSound('message');
 
+        
         // Escape any HTML that may be in here
         msg.msg =  $('<div />').text(msg.msg).html();
 

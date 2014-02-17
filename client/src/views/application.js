@@ -301,6 +301,12 @@ _kiwi.view.Application = Backbone.View.extend({
                         id: 'highlight',
                         url: base_path + '/assets/sound/highlight.mp3'
                     });
+
+                    soundManager.createSound({
+                        id: 'message',
+                        url: base_path + '/assets/sound/message.mp3'
+                    });
+                    
                 }
             });
         });
